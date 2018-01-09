@@ -1,0 +1,97 @@
+/* TEST SECTION */
+
+/* div {
+    border: 1px solid black;
+} */
+
+/* MAIN STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section h1 {
+    font-size: 2em;
+}
+
+/* COVER */
+.cover {
+    height: 100vh;
+    background-image: url(./images/blue-line.svg), url(./images/red-line.svg); 
+		background-size: 100vw 1.5em, 32px 32px;
+		background-repeat: repeat, repeat-y;
+		background-position: 0 0, 64px 0;
+}
+.cover .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.cover .container h1 {
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.cover .container p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* PROFILE */
+.profile {
+    background: #eee;
+}
+
+.profile .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile .container .header {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.profile .grid {
+    display: block;
+    text-align: center;
+}
+
+.profile .grid div {
+    padding: 1em;
+    /* border: 1px solid black; */
+}
+
+.profile .tagline {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.profile .container .details p {
+    margin-top: 0px;
+}
+
+/* EXPERIENCE */
+
+
+/* SKILLS */
+.skills ul {
+    list-style-type: none;
+}
+
+/* PROJECTS */
+
+
+/* CONTACT */
+
+
