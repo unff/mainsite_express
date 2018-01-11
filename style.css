@@ -157,3 +157,16 @@ section h1 {
 .contact .container {
     padding: 1em 0;
 }
+
+.contact .icon {
+    max-height: 50px;
+    max-width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact .site em {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: .5em;
+}
