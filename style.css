@@ -105,6 +105,7 @@ section h1 {
 
 .experience h3 {
     margin-bottom: 0;
+    font-size: 1.4em;
 }
 
 .experience .grid .title p {
@@ -112,9 +113,6 @@ section h1 {
     font-size: .8em;
 }
 
-.experience .title:nth-child(even) {
-    background: #333;
-}
 
 /* SKILLS */
 .skills {
@@ -136,3 +134,45 @@ section h1 {
     background: #eee;
 }
 
+/* TABLET MAIN */
+
+
+/* TABLET COVER */
+
+
+/* TABLET PROFILE */
+
+
+/* TABLET EXPERIENCE */
+
+
+/* TABLET SKILLS */
+
+
+/* TABLET PROJECTS */
+
+
+/* TABLET CONTACTS */
+
+
+
+
+/* DESKTOP MAIN */
+
+
+/* DESKTOP COVER */
+
+
+/* DESKTOP PROFILE */
+
+
+/* DESKTOP EXPERIENCE */
+
+
+/* DESKTOP SKILLS */
+
+
+/* DESKTOP PROJECTS */
+
+
+/* DESKTOP CONTACTS */
