@@ -149,6 +149,26 @@ section h1 {
     padding: 1em 0;
 }
 
+.projects .card {
+    margin: 1em 0;
+    background: #eee;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 0 0 1em 0;
+}
+
+.projects .card img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects .card .details {
+    padding: 0 .5em;
+}
+
 /* MOBILE CONTACT */
 .contact {
     background: #eee;
@@ -165,8 +185,6 @@ section h1 {
     vertical-align: middle;
 }
 
-.contact .site em {
-    font-weight: bold;
-    font-size: 1.2em;
+.contact .site strong {
     margin-left: .5em;
 }
