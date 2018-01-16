@@ -14,12 +14,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    font-weight: bold;
+    color: #555;
+}
+
 section h1 {
     font-size: 2em;
 }
 
 .container {
     width: 90%;
+    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -92,6 +98,7 @@ section h1 {
 .profile .tagline {
     text-align: center;
     padding: 2em 0;
+    font-size: .7em;
 }
 
 .profile .container .details p {
@@ -163,6 +170,8 @@ section h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
 }
 
 .projects .card .details {
@@ -185,6 +194,101 @@ section h1 {
     vertical-align: middle;
 }
 
+.contact .site {
+    display: inline-block;
+    width: 40%;
+}
+
 .contact .site strong {
     margin-left: .5em;
 }
+
+.contact .site a {
+    text-decoration: none;
+}
+
+
+@media only screen  and (min-width : 1224px) {
+    /* DESKTOP COVER */
+
+
+    /* DESKTOP PROFILE */
+    .profile .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .profile .grid .aboutMe {
+        grid-column: 1 2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .profile .grid .pic {
+        grid-column: 2 3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .profile .grid .details {
+        grid-column: 3 4;
+        align-self: center;
+        justify-self: center;
+    }
+
+    /* DESKTOP EXPERIENCE */
+
+    .experience .grid {
+        display: grid;
+        grid-template-columns: 17em auto;
+    }
+
+    .experience .grid .title h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .experience .grid .title {
+        text-align: right;
+        margin-right: 1em;
+    }
+
+    /* DESKTOP SKILLS */
+    .skills .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills .grid hr {
+        display: none;
+    }
+
+    .skills .grid > div {
+        margin: 1em;
+    }
+    .skills .grid > h3 {
+        margin: 1em;
+    }
+
+    .skills .grid .tools h3{
+        padding-bottom: 1.1em;
+    }
+
+    /* DESKTOP PROJECTS */
+    .projects .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .projects .grid .card {
+        margin: 1em;
+    }
+
+    
+
+    /* DESKTOP CONTACT */
+
+
+
+}
+
