@@ -1,8 +1,8 @@
 .cover {
-    background-image: url("./images/mountain.jpg");
+    background-image: url("./images/field.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 94.5vh;
 }
 
 .darken {
@@ -12,15 +12,49 @@
 }
 
 .cover .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%); 
     color: white;
 }
 
-#btn_mountains {
+#btn_fields {
     display: none;
+}
+
+.interests {
+    background: #efefef;
+}
+
+.interests .content-top {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-column-gap: 3em;
+    padding-bottom: 3em;
+}
+
+.interests .container .content-top img {
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.interests .container .content-top .text-holder {
+    align-self: center;
+}
+
+.interests .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.work {
+    background-color: #343a40;
+    color: #fff;
 }
