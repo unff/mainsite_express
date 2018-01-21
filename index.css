@@ -35,6 +35,7 @@
 
 .interests .container .content-top img {
     height: 200px;
+    border: 10px solid rgb(117, 139, 117);
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -42,11 +43,6 @@
 
 .interests .container .content-top .text-holder {
     align-self: center;
-}
-
-.interests .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
