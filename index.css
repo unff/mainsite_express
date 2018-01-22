@@ -58,3 +58,39 @@
 .fox .carousel-caption {
     background: rgba(0,0,0,0.3);
 }
+
+footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    background: #343a40;
+    color: #acbecf;
+}
+
+footer a{
+    color: #acbecf;
+    text-decoration: none !important;
+}
+
+footer .footer-grid {
+    padding-bottom: 3em;
+}
+
+footer .footer-grid .right-side {
+    text-align: right;
+}
+
+footer .site {
+    margin: 1em;
+}
+
+footer .site .icon {
+    max-height: 50px;
+    max-width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}

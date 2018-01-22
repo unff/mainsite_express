@@ -34,3 +34,7 @@ h1 {
 .allcaps {
     text-transform: uppercase;
 }
+
+footer {
+    font-size: smaller;
+}
