@@ -1,3 +1,16 @@
-This is my resume page written in all HTML/CSS with no frameworks, libraries, or other external code.
+This is my website.  It's a work in progress.
 
-Don't adjust your monitors; colors are muted to conform the ote greyscale theme.
+TODO:
+- sayre?
+- blog-ish?  maybe?
+- fox section
+- projects blog
+
+
+IN WORK:
+- front page
+
+
+
+DONE:
+- resume page
