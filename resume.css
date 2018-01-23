@@ -86,8 +86,10 @@ section h1 {
 }
 
 .profile .grid {
-    display: block;
+    display: grid;
     text-align: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .profile .grid div {
@@ -95,11 +97,18 @@ section h1 {
     /* border: 1px solid black; */
 }
 
+.profile .pic {
+    justify-self: center;
+    align-self: center;
+}
+
 .profile .headpic {
     border-radius: 100%;
     width: 100%;
     max-width: 250px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
     filter: grayscale(60%);
 }
