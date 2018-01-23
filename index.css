@@ -69,6 +69,45 @@
     color: #fff;
 }
 
+.work .ebay-work {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-column-gap: 1.5em;
+    padding: 2em;
+}
+
+/* .work .ebay-work > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+} */
+
+.work .ebay-work .ebay-left img {
+    max-width: 100%;
+}
+
+.work .ebay-work .ebay-right {
+    align-self: center;
+    justify-self: left;
+}
+
+.work .webdev-work {
+    display: grid;
+    grid-template-columns: auto 35%;
+    grid-column-gap: 1.5em;
+    padding: 2em;
+}
+
+.work .webdev-work .webdev-right img {
+    max-height: 70px;
+    margin: .5em
+}
+
+.work .webdev-work .webdev-left {
+    align-self: center;
+    justify-self: left;
+}
+
 .fox .carousel-caption {
     background: rgba(0,0,0,0.3);
 }
