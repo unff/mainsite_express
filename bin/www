@@ -12,8 +12,9 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.NODE_ENV == 'production'? '8001' : '8001');
+var port = normalizePort('8001');
 app.set('port', port);
+app.set('trust proxy', 'loopback,linklocal')
 
 /**
  * Create HTTP server.
