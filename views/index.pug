@@ -1,0 +1,159 @@
+extends layout
+
+block content
+    section.cover
+        .darken
+            .container
+                .content
+                    p.allcaps screen-sized cover image?  check ✔
+                    h1 Oh look, a field.
+                    p
+                    button#btn_mountains.btn.btn-outline-light(type="button") I prefer mountains
+                    button#btn_fields.btn.btn-outline-light(type="button") I prefer fields
+                    button#btn_ponds.btn.btn-outline-light(type="button") I prefer ponds
+    nav.navbar.sticky-top.navbar-expand-lg.navbar-dark.bg-dark
+        a.navbar-brand(href="#") jcryan.com
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+                li.nav-item
+                    a.nav-link(href="#interests") Interests
+                li.nav-item
+                    a.nav-link(href="#work") Work
+                li.nav-item
+                    a.nav-link(href="#fox") Fox
+                li.nav-item
+                    a.nav-link(href="#footer") Contact
+                //
+                    <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+    section#interests.interests
+        .container
+            .content-top
+                .icon-holder
+                    .icon-overlay
+                        // <img src="images/JC_icon.png">
+                .text-holder
+                    h2 Hi, I'm JC Ryan.
+                    p I'm doing great! How are you?  I see. Congrats and/or condolonces.
+                    p This got awkward. Let's move on.
+                    p Here's a few of the things I'm interested in:
+            .card-deck
+                .card(style="width: 18rem;")
+                    img.card-img-top(src="./images/gaming.jpg" alt="Gaming image cap")
+                    .card-body
+                        h5.card-title Gaming!
+                        p.card-text
+                            | I'm currently playing a lot of ARK: Survival Evolved.
+                        p.card-text
+                            | ARK hates you, and you appease it by sacrificing hours of your life
+                            | to it.  Hours you will never get back.
+                        p.card-text I play this willingly.  It's madness.
+                        // <a href="#" class="btn btn-primary">Go somewhere</a>
+                .card(style="width: 18rem;")
+                    img.card-img-top(src="./images/coding.jpg" alt="Coding image cap")
+                    .card-body
+                        h5.card-title Coding!
+                        p.card-text
+                            | I'm currently working on some tools that are for personal use.
+                        p.card-text
+                            | I don't make my living writing code at the moment, but it is a small 
+                            | aspect of my current job.  See my 
+                            a(href="./resume.html") resume
+                            |  for
+                            |                             more info on that.
+                        // <a href="#" class="btn btn-primary">Go somewhere</a>
+                .card(style="width: 18rem;")
+                    img.card-img-top(src="./images/anime.jpg" alt="Anime image cap")
+                    .card-body
+                        h5.card-title Anime!
+                        p.card-text
+                            | Some of the best stories I've experienced in the past 10 years
+                            | have been animated.
+                        p.card-text
+                            | Not going to do any evangelizing here, but you can check out 
+                            | a list of what I watched and liked on 
+                            a(href="https://myanimelist.net/animelist/unff") MyAnimeList
+                            | .
+                            |                             It's not up to date most of the time.
+                        // <a href="#" class="btn btn-primary">Go somewhere</a>
+    section#work.work
+        .container
+            h2 Oh man, what do I want to put here?
+            p
+                | I mean, I should put something in here about how I work, what I'm doing, stories or something to add some content.
+            .ebay-work
+                .ebay-left
+                    img(src="images/Ebay_logo.svg" alt="eBay logo")
+                .ebay-right
+                    p I'm working on some eBay tools for my own use.
+                    p
+                        | I'm thinking on scouring the area for items to sell and opening up an eBay shop to make some side cash.
+                        | The idea is in the early stages, but the tools are coming along. I mean, I deal with the ebay APIs nearly
+                        | daily at work so this is pretty much an extension of that.  I won't go into too many details since
+                        | I'll probably forget that this blurb is on my front page and it will be woefully out of date by the time
+                        | anyone else reads this.
+            .webdev-work
+                .webdev-left
+                    p
+                        | I'd like to be doing a lot more web dev in my every day life, but between work and gaming and fox and
+                        | everything else, it's rough finding the time when I'm both motivated and have planned out enough to have
+                        | a direction to go in.
+                    p
+                        | I'm using the MEAN stack these days until i run across another stack that I like better.  I used to use LAMP or WIMP
+                        | but after playing with Node I like the platform better.
+                .webdev-right
+                    img(src="images/nodejs.png" alt="Node")
+                    img(src="images/expressjs.png" alt="Express")
+                    img(src="images/mongodb.png" alt="Mongo")
+                    img(src="images/angular.png" alt="Angular")
+                    img(src="images/blueicon.png" alt="VS Code")
+                    img(src="images/bootstrap.jpg" alt="Bootstrap")
+                    img(src="images/sql-server.png" alt="SQL Server")
+                    img(src="images/msql.png" alt="Maria and MySQL")
+    section#fox.fox
+        .container
+            h2 Fox!  Fox! Fox!
+            p My dog is awesome and deserves his own image showcase.
+            #carouselExampleIndicators.carousel.slide(data-ride="carousel")
+                ol.carousel-indicators
+                    li.active(data-target="#carouselExampleIndicators" data-slide-to="0")
+                    li(data-target="#carouselExampleIndicators" data-slide-to="1")
+                    li(data-target="#carouselExampleIndicators" data-slide-to="2")
+                    li(data-target="#carouselExampleIndicators" data-slide-to="3")
+                    li(data-target="#carouselExampleIndicators" data-slide-to="4")
+                    // <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                .carousel-inner
+                    .carousel-item.active
+                        img.d-block.w-100(src="images/IMG_2354.jpg" alt="Holidays Dog")
+                        .carousel-caption.d-none.d-md-block
+                            h4 Holidays with the Fox
+                            p Surely it's time to play.
+                    .carousel-item
+                        img.d-block.w-100(src="images/IMG_2627.jpg" alt="My ball")
+                        .carousel-caption.d-none.d-md-block
+                            h4 Ball!
+                            p mine mine mine mine mine
+                    .carousel-item
+                        img.d-block.w-100(src="images/IMG_2630.jpg" alt="Still my ball")
+                        .carousel-caption.d-none.d-md-block
+                            h4 My ball
+                            p Chase all you want.
+                    .carousel-item
+                        img.d-block.w-100(src="images/IMG_2645.jpg" alt="Walk time")
+                        .carousel-caption.d-none.d-md-block
+                            h4 Walk time?
+                            p Why are we still here? Walk time!
+                    .carousel-item
+                        img.d-block.w-100(src="images/IMG_2806.jpg" alt="Snow Dog")
+                        .carousel-caption.d-none.d-md-block
+                            h4 Out in the snow
+                            p (I bribed him with a treat to get this pose.)
+                    a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+                        span.carousel-control-next-icon(aria-hidden="true")
+                        span.sr-only Next
